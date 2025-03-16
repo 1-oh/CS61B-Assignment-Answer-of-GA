@@ -108,13 +108,4 @@ public class LinkedListDeque<T> {
          else return NodeRecursive(index-1,start.next);
     }
 
-    public static void main(String Args[]){
-        LinkedListDeque ad=new LinkedListDeque<Integer>();
-        for(int i=0;i<20;i++){
-            ad.addFirst(i);
-        }
-        Integer GET=(int)ad.get(5);
-        System.out.println(GET);
-        System.out.println(ad.isEmpty());
-    }
 }
