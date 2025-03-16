@@ -86,14 +86,4 @@ public class ArrayDeque<T> {
         }
     }
 
-    public static void main(String Args[]){
-        ArrayDeque ad=new ArrayDeque<Integer>();
-        System.out.println(ad.isEmpty());
-        for(int i=0;i<20;i++){
-            ad.addFirst(i);
-        }
-        Integer GET=(int)ad.get(5);
-        System.out.println(GET);
-        System.out.println(ad.isEmpty());
-    }
 }
