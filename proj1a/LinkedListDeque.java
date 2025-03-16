@@ -11,8 +11,8 @@ public class LinkedListDeque<T> {
         }
     }
 
-    public StuffNode sentinel_head,sentinel_tail;
-    public int size;
+    private StuffNode sentinel_head,sentinel_tail;
+    private int size;
 
      public LinkedListDeque(){
            sentinel_head=new StuffNode(null,null,null);
@@ -79,7 +79,7 @@ public class LinkedListDeque<T> {
     public T removeLast(){
         T ret=sentinel_tail.pre.value;
         StuffNode delptr=sentinel_tail.pre;
-        sentinel_tail.pre=sentinel_head.pre.pre;
+        sentinel_tail.pre=sentinel_tail.pre.pre;
         sentinel_tail.pre.next=sentinel_tail;
 
         delptr.pre=null;
