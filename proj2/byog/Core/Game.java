@@ -1,9 +1,9 @@
 package byog.Core;
-
+import edu.princeton.cs.introcs.StdDraw;
 import byog.Phase1.MapGenerator;
 import byog.TileEngine.TERenderer;
 import byog.TileEngine.TETile;
-import edu.princeton.cs.introcs.StdDraw;
+
 
 import java.awt.Color;
 import java.awt.Font;
