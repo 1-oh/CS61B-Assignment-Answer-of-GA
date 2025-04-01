@@ -35,7 +35,7 @@ public class MapGenerator {
        private static void RenderClear(){
            for(int i=0;i<width;i+=1){
                for(int j=0;j<height;j+=1){
-                   Tiles[i][j]=Tileset.NOTHING;
+                   Tiles[i][j]=Tileset.SAND;
                    isFull[i][j]=0;
                }
            }
