@@ -37,10 +37,10 @@ public class Game {
 
         char mode=input.charAt(0);
         int len_of_input=input.length();
-        if(mode=='N') {
+        if(mode=='N'||mode=='n') {
             int endofseed;
             for (endofseed = 1; endofseed < input.length(); endofseed += 1) {
-                if (input.charAt(endofseed) == 'S') break;
+                if (input.charAt(endofseed) == 'S'||input.charAt(endofseed) == 's') break;
             }
             long newseed=0;
             for(int i=1;i<endofseed;i++){
