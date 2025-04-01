@@ -5,7 +5,10 @@ import byog.TileEngine.TERenderer;
 import byog.TileEngine.TETile;
 import edu.princeton.cs.introcs.StdDraw;
 
-import java.util.Iterator;
+import java.awt.Color;
+import java.awt.Font;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Game {
     TERenderer ter = new TERenderer();
