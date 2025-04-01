@@ -10,7 +10,6 @@ import java.awt.Font;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static byog.Phase1.MapGenerator.EndCleaning;
 
 public class Game {
     TERenderer ter = new TERenderer();
@@ -56,7 +55,6 @@ public class Game {
             seed=newseed;
             MapGenerator map=new MapGenerator(WIDTH,HEIGHT);
             map.TilesProcessing();
-            EndCleaning();
             return MapGenerator.Tiles;
         }
         return null;
