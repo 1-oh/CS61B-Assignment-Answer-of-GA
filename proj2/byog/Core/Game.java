@@ -50,11 +50,6 @@ public class Game {
             seed=newseed;
             MapGenerator map=new MapGenerator(WIDTH,HEIGHT);
             map.GenerateMap();
-
-            if(input.charAt(len_of_input-1)=='Q' && input.charAt(len_of_input-2)==':'){
-                TETile[][] finalWorldFrame =map.Tiles;
-                return finalWorldFrame;
-            }
         }
         TETile[][] finalWorldFrame = null;
         return finalWorldFrame;
