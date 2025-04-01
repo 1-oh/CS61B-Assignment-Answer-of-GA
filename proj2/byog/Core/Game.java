@@ -37,10 +37,10 @@ public class Game {
 
         char mode=input.charAt(0);
         int len_of_input=input.length();
-        if(mode=='n') {
+        if(mode=='N') {
             int endofseed;
             for (endofseed = 1; endofseed < input.length(); endofseed += 1) {
-                if (input.charAt(endofseed) == 's') break;
+                if (input.charAt(endofseed) == 'S') break;
             }
             long newseed=0;
             for(int i=1;i<endofseed;i++){
@@ -51,7 +51,7 @@ public class Game {
             MapGenerator map=new MapGenerator(WIDTH,HEIGHT);
             map.GenerateMap();
 
-            if(input.charAt(len_of_input-1)=='q' && input.charAt(len_of_input-2)==':'){
+            if(input.charAt(len_of_input-1)=='Q' && input.charAt(len_of_input-2)==':'){
                 TETile[][] finalWorldFrame =map.Tiles;
                 return finalWorldFrame;
             }
