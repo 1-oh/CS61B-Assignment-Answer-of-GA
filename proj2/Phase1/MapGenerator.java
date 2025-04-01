@@ -10,6 +10,15 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
+package byog.Core;
+
+
+import edu.princeton.cs.introcs.StdDraw;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class MapGenerator {
        public static long SEED= Game.seed;
