@@ -51,7 +51,7 @@ public class Game {
             MapGenerator map=new MapGenerator(WIDTH,HEIGHT);
             map.GenerateMap();
         }
-        TETile[][] finalWorldFrame = null;
+        TETile[][] finalWorldFrame = MapGenerator.Tiles;
         return finalWorldFrame;
     }
 
