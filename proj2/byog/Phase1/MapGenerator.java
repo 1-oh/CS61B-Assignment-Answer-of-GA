@@ -11,6 +11,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
+import edu.princeton.cs.introcs.StdDraw;
+
+
 public class MapGenerator {
        public static long SEED= Game.seed;
        public static int width;
