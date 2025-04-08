@@ -14,7 +14,7 @@ import java.util.Random;
 public class GameUI {
     private static int width;
     private static int height;
-    private static long seed;
+    public static long seed;
     public static boolean gameOver;
     private static boolean playerTurn;
     private static final Font mini = new Font("Arial", Font.PLAIN, 15);
