@@ -31,13 +31,6 @@ public class GameUI {
          */
         width = Width;
         height = Height;
-        StdDraw.setCanvasSize(this.width * 16, this.height * 16);
-        StdDraw.setFont(ordinary);
-        StdDraw.setXscale(0, width);
-        StdDraw.setYscale(0, height);
-        StdDraw.clear(Color.BLACK);
-        StdDraw.enableDoubleBuffering();
-
         gameOver = false;
     }
 
