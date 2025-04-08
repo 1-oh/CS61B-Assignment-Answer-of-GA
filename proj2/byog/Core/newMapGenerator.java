@@ -51,7 +51,7 @@ public class newMapGenerator implements Serializable {
         RANDOM = new Random(seed);
         RANDOM2 = new Random(seed);
         gameOver = false;
-        ter.initialize(width, height);
+        
     }
 
     /*-------------------------The part for Serializable(Saving the current situation of the class(Begin)-------------------*/
@@ -345,7 +345,7 @@ public class newMapGenerator implements Serializable {
         isFull[Frog.x][Frog.y] = 3;
         ListOfFloor.remove(FrogIndex);
 
-        StdDraw.pause(200);
+        
 
         int BearIndex = RANDOM.nextInt(ListOfFloor.size());
         Bear = new Player(ListOfFloor.get(BearIndex));
