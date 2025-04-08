@@ -201,7 +201,7 @@ public class GameUI {
                     mov == 'J' || mov == 'K' || mov == 'L' || mov == 'I') {
                 newMapGenerator.movePlayer(newMapGenerator.Frog, mov);
 
-            }
+            }}
 
     }
 
