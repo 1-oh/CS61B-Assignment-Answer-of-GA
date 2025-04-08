@@ -92,7 +92,7 @@ public class Game {
                 newseed += input.charAt(i) - '0';
             }
             GameUI ui = new GameUI(WIDTH, HEIGHT);
-            newMapGenerator map = new newMapGenerator(WIDTH, HEIGHT, newseed);
+            GameUI.seed=newseed;
 
             String operation = input.substring(endofseed + 1);
             GameUI.StartNewGame(0, operation);
