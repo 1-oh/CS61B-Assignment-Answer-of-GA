@@ -160,7 +160,7 @@ public class GameUI {
                 while (!StdDraw.hasNextKeyTyped()) {
                     MousePause();
                 }
-                ;
+                
                 mov = StdDraw.nextKeyTyped();
             } else if (pattern == 0) {
                 if (IndexOfOperation >= inputString.length())
@@ -186,9 +186,6 @@ public class GameUI {
                         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("savefile.txt"));
                         oos.writeObject(map);
                         oos.close();
-                        StdDraw.clear(StdDraw.BLACK);
-                        NormalDrawFrame("Successfully saved!Please exit.See you again!");
-                        StdDraw.show();
                         return;
                     }catch (IOException e){
                         throw new RuntimeException();
@@ -200,42 +197,26 @@ public class GameUI {
             if (mov == 'a' || mov == 'w' || mov == 's' || mov == 'd' ||
                     mov == 'A' || mov == 'W' || mov == 'S' || mov == 'D') {
                 newMapGenerator.movePlayer(newMapGenerator.Bear, mov);
-                ter.renderFrame(newMapGenerator.getTileArray());
 
-                DrawPlayerInformation();
-                StdDraw.show();
             } else if (mov == 'j' || mov == 'k' || mov == 'l' || mov == 'i' ||
                     mov == 'J' || mov == 'K' || mov == 'L' || mov == 'I') {
                 newMapGenerator.movePlayer(newMapGenerator.Frog, mov);
-                ter.renderFrame(newMapGenerator.getTileArray());
 
-                DrawPlayerInformation();
-                StdDraw.show();
             }
 
-            if (pattern == 0)
-                StdDraw.pause(500);
-        }
     }
 
     public static void StartNewGame(int pattern, String inputString){
         /** 0 for playWithString,1 for play with KeyBoard */
-        TERenderer ter = new TERenderer();
-        ter.initialize(width, height);
+
         newMapGenerator map = new newMapGenerator(width, height, seed);
         newMapGenerator.MapGenerate();
 
-        ter.renderFrame(newMapGenerator.getTileArray());
-        StdDraw.pause(1000);
-
         GamePlaying(pattern, inputString, ter, map);
-
     }
 
     public static void LoadOldGame(int pattern,String Operation){
-        TERenderer ter = new TERenderer();
-        ter.initialize(width, height);
-
+        
         newMapGenerator map;
         try{
             ObjectInputStream ois = new ObjectInputStream(new FileInputStream("savefile.txt"));
@@ -243,9 +224,6 @@ public class GameUI {
         }catch (IOException | ClassNotFoundException e){
             throw new RuntimeException();
         }
-
-        ter.renderFrame(newMapGenerator.getTileArray());
-        StdDraw.pause(1000);
 
         GamePlaying(pattern,Operation, ter, map);
     }
