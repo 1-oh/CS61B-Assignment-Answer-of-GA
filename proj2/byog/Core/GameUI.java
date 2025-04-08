@@ -150,7 +150,7 @@ public class GameUI {
         }
     }
 
-    public static void GamePlaying(int pattern, String inputString, TERenderer ter, newMapGenerator map) {
+    public static void GamePlaying(int pattern, String inputString, newMapGenerator map) {
         int IndexOfOperation = 0;
 
         while (true) {
