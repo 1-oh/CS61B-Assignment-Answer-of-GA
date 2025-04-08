@@ -175,7 +175,6 @@ public class GameUI {
                     while (!StdDraw.hasNextKeyTyped()) {
                         MousePause();
                     }
-                    ;
                     isquit = StdDraw.nextKeyTyped();
                 } else if (pattern == 0) {
                     isquit = inputString.charAt(IndexOfOperation);
