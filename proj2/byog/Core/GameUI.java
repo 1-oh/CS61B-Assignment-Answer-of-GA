@@ -211,7 +211,7 @@ public class GameUI {
         newMapGenerator map = new newMapGenerator(width, height, seed);
         newMapGenerator.MapGenerate();
 
-        GamePlaying(pattern, inputString, ter, map);
+        GamePlaying(pattern, inputString, map);
     }
 
     public static void LoadOldGame(int pattern,String Operation){
@@ -224,7 +224,7 @@ public class GameUI {
             throw new RuntimeException();
         }
 
-        GamePlaying(pattern,Operation, ter, map);
+        GamePlaying(pattern, Operation , map);
     }
 
 }
