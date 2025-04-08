@@ -115,13 +115,14 @@ public class GameUI {
     public static void MousePause(){
         if(StdDraw.isMousePressed()){
             int sign=newMapGenerator.isFull[(int)StdDraw.mouseX()][(int)StdDraw.mouseY()];
-            String what = switch (sign) {
-                case 1 -> "Floor";
-                case 2 -> "Wall";
-                case 3 -> "Frog";
-                case 4 -> "Bear";
-                case 5 -> "Place to progress";
-                default -> "";
+            String what="";
+            switch (sign) {
+                case 1: what="Floor";break;
+                case 2: what="Wall";break;
+                case 3: what="Frog";break;
+                case 4: what="Bear";break;
+                case 5: what="Place to progress";break;
+                default: what="";
             };
             drawFrame(what,width/2,height-3,mini);
             StdDraw.show();
