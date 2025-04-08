@@ -361,6 +361,6 @@ public class newMapGenerator implements Serializable {
             isFull[AwardPos.px][AwardPos.py] = 5;
             ListOfFloor.remove(AwardIndex);
         }
-
+        ListOfFloor.clear();
     }
 }
