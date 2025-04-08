@@ -3,7 +3,7 @@ package byog.Core;
 import byog.Phase1.MapGenerator;
 import byog.TileEngine.TERenderer;
 import byog.TileEngine.TETile;
-
+import edu.princeton.cs.introcs.StdDraw;
 import org.junit.Test;
 
 import javax.imageio.IIOException;
