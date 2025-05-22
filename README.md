@@ -1,7 +1,21 @@
 # CS61B-Assignment-Answer-of-GA
 This is a repository of Gary Agasa's implementation of CS61B 2018 Spring 's project,homework and labs.
 The process is continuing,here is the list of assignment
-+  [x] project 0
-+  [x] project 1
-+  [x] project 2
-+  [x] project 3
++ Projects:
+  +  [x] project 0 NbodyProblem(Java Syntax)
+  +  [ ] project 1 DataStructure(Double Ended Queue,Half done)
+  +  [x] project 2 TileGame(Java Syntax,Software Engineering)
+         Including:
+      + [x] lab5
+      + [x] lab6     
+  +  [x] project 3 BearMap(A* algorithm,tries,...)
++ Homeworks:
+  + [x] homework1 GuitarrHero(Java Syntax)
+  + [x] homework2 Percolation(Set)
+  + [x] homework3 Hashing
+  + [x] homework4 8 Puzzle(A* algorithm)
+  + [ ] homework5
+  + [ ] homework6
+  + [ ] homework7
++ Labs:
+  
