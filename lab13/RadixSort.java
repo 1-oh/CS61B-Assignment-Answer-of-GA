@@ -34,7 +34,7 @@ public class RadixSort {
         for(int k = 0; k < ret.length; k += 1){
             int addTimes = lengthMax - ret[k].length();
             for(int i = 0; i < addTimes; i += 1){
-                ret[k] = ret[k] + "_";
+                ret[k] = ret[k] + " ";
             }
         }
         for(int i = lengthMax - 1; i >= 0; i -= 1){
@@ -43,7 +43,7 @@ public class RadixSort {
 
         //To delete "_"
         for(int k = 0; k < ret.length; k += 1){
-            while (ret[k].charAt(ret[k].length() - 1) == '_'){
+            while (ret[k].charAt(ret[k].length() - 1) == ' '){
                 ret[k] = ret[k].substring(0, ret[k].length() - 1);
             }
         }
