@@ -23,5 +23,5 @@ The process is continuing,here is the list of assignment
   + [x] Lab 10: Priority Queues
   + [x] Lab 11: Graphs
   + [x] Lab 12: Merge Sort and Quick Sort
-  + [ ] Lab 13: Radix Sorts
+  + [x] Lab 13: Radix Sorts
   + [ ] Lab 14: Fractal Sound
