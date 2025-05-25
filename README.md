@@ -15,7 +15,7 @@ The process is continuing,here is the list of assignment
   + [x] homework2 Percolation(Set)
   + [x] homework3 Hashing
   + [x] homework4 8 Puzzle(A* algorithm)
-  + [ ] homework5
+  + [x] homework5 Seam Carving(Dynamic Programming)
   + [ ] homework6
   + [ ] homework7
 + Labs:
