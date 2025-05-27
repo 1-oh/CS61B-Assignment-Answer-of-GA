@@ -27,6 +27,6 @@ The process is continuing,here is the list of assignment
   + [x] Lab 14: Fractal Sound
   + [ ] Lab 15：HugLife
   
-The learning of the CS61B is finished on March 27th, the 120th anniversary of Fudan University.😁
+The learning of the CS61B is finished on May 27th, the 120th anniversary of Fudan University.😁
 There remain two HW (HW6 and HW7) and one Lab(Lab15)😒, which I may solve in the summer vacation when I'm free.
 All in all, this is an extra-ordinary data structure course.I was so fascinated by the great teacher Josh Hug 's charm.😍
