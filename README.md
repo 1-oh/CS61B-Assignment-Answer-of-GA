@@ -24,4 +24,5 @@ The process is continuing,here is the list of assignment
   + [x] Lab 11: Graphs
   + [x] Lab 12: Merge Sort and Quick Sort
   + [x] Lab 13: Radix Sorts
-  + [ ] Lab 14: Fractal Sound
+  + [x] Lab 14: Fractal Sound
+  + [ ] Lab 15：HugLife
